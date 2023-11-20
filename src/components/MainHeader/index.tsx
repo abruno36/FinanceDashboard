@@ -1,8 +1,11 @@
 import React from 'react';
+import { Container } from './styles';
 
-const Aside: React.FC = () => {
+const MainHeader: React.FC = () => {
     return (
-        <h1>Aside</h1>
+        <Container>
+            <h1>MainHeader</h1>
+        </Container>
     )
 }
-export default Aside;
+export default MainHeader;
