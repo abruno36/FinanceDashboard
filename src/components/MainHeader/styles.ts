@@ -11,8 +11,17 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 10px 0 25px;
+    padding: 0 30px 0 25px;
 
     border-bottom: 1px solid ${props => props.theme.colors.gray};
 
 `;
+
+export const Profile = styled.div`
+    color: ${props => props.theme.colors.white};
+`;
+
+export const Welcome = styled.h3``;
+
+
+export const UserName = styled.span``;
