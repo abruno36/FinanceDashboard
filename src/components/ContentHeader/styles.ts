@@ -21,7 +21,7 @@ export const Container = styled.div`
 
 export const TitleContainer = styled.div<ITitleContainerProps>`
 
-    > h2 {
+    > h1 {
         color: ${props => props.theme.colors.white};
 
         &::after {
@@ -51,7 +51,9 @@ export const Controllers = styled.div`
 
     @media(max-width: 320px){
         width: 100%;
-        justify-content: space-around;    
+
+        justify-content: space-around;
+        
         margin-top: 20px;       
     }
 `;

@@ -15,8 +15,7 @@ import {
     MdArrowDownward,
     MdArrowUpward,
     MdExitToApp,
-    MdClose,
-    MdMenu, 
+
 } from 'react-icons/md';
 
 import logoImg from '../../assets/logo.svg';
@@ -29,7 +28,7 @@ const Aside: React.FC = () => {
                 <Title>Finance Dashboard</Title> 
             </Header>
             <MenuContainer>
-                <MenuItemLink href="/">
+                <MenuItemLink href="/dashboard">
                     <MdDashboard />
                     Dashboard
                 </MenuItemLink>
@@ -49,6 +48,7 @@ const Aside: React.FC = () => {
                     Sair
                 </MenuItemButton>
             </MenuContainer>
+            
         </Container>
     )
 }
