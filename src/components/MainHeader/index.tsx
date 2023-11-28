@@ -19,13 +19,7 @@ const MainHeader: React.FC = () => {
 
     return (
         <Container>
-            <Toggle
-                labelLeft="Light"
-                labelRight="Dark"
-                checked={false}
-                onChange={() => console.log ('mudou')}
-            />
-
+            <Toggle/>
             <Profile>
                 <Welcome>Olá, {emoji}</Welcome>
                 <UserName>Antonio Bruno</UserName>

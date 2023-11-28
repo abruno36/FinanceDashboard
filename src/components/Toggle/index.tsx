@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
     Container,
@@ -14,22 +14,21 @@ interface IToggleProps {
     onChange(): void;
 }
 
-const Toggle: React.FC<IToggleProps> = ({
-    labelLeft,
-    labelRight,
-    checked,
-    onChange
-}) => (
-    <Container>
-        <ToggleLabel>{labelLeft}</ToggleLabel>
-        <ToggleSelector                    
-            checked={checked}
-            uncheckedIcon={false}
-            checkedIcon={false}
-            onChange={() => console.log ('mudou')}
-        />
-        <ToggleLabel>{labelRight}</ToggleLabel>
-    </Container>
-)
+const Toggle: React.FC = () => {
+    const [online, setOnline] = useState<boolean>(true);
+
+    return (
+        <Container>
+            <ToggleLabel>Light</ToggleLabel>
+            <ToggleSelector
+                checked={online}
+                onChange={() => setOnline(!online)}
+                uncheckedIcon={false}
+                checkedIcon={false}
+            />
+            <ToggleLabel>Dark</ToggleLabel>
+        </Container>
+    );
+};
 
 export default Toggle;
