@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useMemo, useState, useEffect } from 'react';
 
 import ContentHeader from '../../components/ContentHeader';
@@ -120,7 +121,6 @@ const List: React.FC<IRouteParams> = ({ match }) => {
         }
     }
 
-
     useEffect(() => {
         const { data } = pageData;
 
@@ -145,7 +145,6 @@ const List: React.FC<IRouteParams> = ({ match }) => {
 
         setData(formattedData);
     }, [pageData, monthSelected, yearSelected, data.length, frequencyFilterSelected]);
-
 
     return (
         <Container>
