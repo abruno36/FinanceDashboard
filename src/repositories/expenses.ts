@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {"description":"Energia elétrica",      "amount":"150.55","type":"saída","frequency":"recorrente","date":"2023-01-10"},
   {"description":"Água",                  "amount":"75.55", "type":"saída","frequency":"recorrente","date":"2023-01-15"},
@@ -45,7 +46,7 @@ export default [
   {"description":"Água",                  "amount":"90.00", "type":"saída","frequency":"recorrente","date":"2023-07-15"},
   {"description":"Telefone",              "amount":"99.99", "type":"saída","frequency":"recorrente","date":"2023-07-23"},
   {"description":"Plano de Saúde",        "amount":"300.00","type":"saída","frequency":"recorrente","date":"2023-07-23"},
-  {"description":"Compras do mês",        "amount":"700.00","type":"saída","frequency":"recorrente","date":"2023-07-25"},
+  {"description":"Compras do mês",        "amount":"700.00","type":"saída","frequency":"recorrente","date":"2022-07-25"},
   {"description":"Cafeteira",             "amount":"250.00","type":"saída","frequency":"eventual",  "date":"2022-07-26"},
   {"description":"Pizza",                 "amount":"60.00", "type":"saída","frequency":"eventual",  "date":"2022-07-19"}
 ]
