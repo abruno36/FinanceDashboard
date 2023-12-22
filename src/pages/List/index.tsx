@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useMemo, useState, useEffect } from 'react';
 
 import ContentHeader from '../../components/ContentHeader';
@@ -9,7 +8,7 @@ import gains from '../../repositories/gains';
 import expenses from '../../repositories/expenses';
 import formatCurrency from '../../utils/formatCurrency';
 import formatDate from '../../utils/formatDate';
-import { listOfMonths } from '../../utils/months';
+import listOfMonths from '../../utils/months';
 import { v4 as uuidv4 } from 'uuid';
 
 import {
@@ -51,13 +50,13 @@ const List: React.FC<IRouteParams> = ({ match }) => {
                 lineColor: '#4E41F0',
                 data: gains
             }
-            :
+            :       
             {
                 title: 'Saídas',
                 lineColor: '#E44C4E',
                 data: expenses
-            }
-    }, [movimentType]);
+            }       
+    },[movimentType]);
 
     const years = useMemo(() => {
         let uniqueYears: number[] = [];
@@ -82,13 +81,13 @@ const List: React.FC<IRouteParams> = ({ match }) => {
     }, [pageData]);
 
     const months = useMemo(() => {
-        return listOfMonths.map((item: { value: any; label: any; }) => {
+        return listOfMonths.map((month, index) => {
             return {
-                value: item.value,
-                label: item.label,
+                value: index + 1,
+                label: month,
             }
         });
-    }, []);
+    },[]);
 
     const handleFrequencyClick = (frequency: string) => {
         const alreadySelected = frequencyFilterSelected.findIndex(item => item === frequency);
@@ -149,14 +148,14 @@ const List: React.FC<IRouteParams> = ({ match }) => {
     return (
         <Container>
             <ContentHeader title={pageData.title} lineColor={pageData.lineColor}>
-                <SelectInput
+            <SelectInput 
                     options={months}
-                    onChange={(e) => handleMonthSelected(e.target.value)}
+                    onChange={(e) => handleMonthSelected(e.target.value)} 
                     defaultValue={monthSelected}
                 />
-                <SelectInput
-                    options={years}
-                    onChange={(e) => handleYearSelected(e.target.value)}
+                <SelectInput 
+                    options={years} 
+                    onChange={(e) => handleYearSelected(e.target.value)} 
                     defaultValue={yearSelected}
                 />
             </ContentHeader>

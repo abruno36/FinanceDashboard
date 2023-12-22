@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import Layout from '../components/Layout';
 import Dashboard from '../pages/Dashboard';
@@ -7,14 +7,10 @@ import List from '../pages/List';
 
 const AppRoutes: React.FC = () => (
     <Layout>
-        <Routes>
-           <Route path='/dashboard' element={<Dashboard />} />
-           <Route path='/list/:type' element={<List match={{
-                params: {
-                    type: ''
-                }
-            }} />} />
-        </Routes>
+        <Switch>
+            <Route path="/dashboard" exact component={Dashboard} />
+            <Route path="/list/:type" exact component={List} />
+        </Switch>
     </Layout>
 );
 

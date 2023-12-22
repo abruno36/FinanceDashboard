@@ -34,6 +34,7 @@ export default [
   {"description":"Plano de Saúde",        "amount":"300.00","type":"saída","frequency":"recorrente","date":"2023-12-23"},
   {"description":"Compras do mês",        "amount":"540.00","type":"saída","frequency":"recorrente","date":"2023-12-25"},
   {"description":"Parcela do Celular 4/5","amount":"150.99","type":"saída","frequency":"eventual",  "date":"2023-12-26"},
+  {"description":"Compra BMW - 2015",     "amount":"109000.00","type":"saída","frequency":"eventual",  "date":"2023-12-26"},
   {"description":"Blusa Iron Man",        "amount":"150.00","type":"saída","frequency":"eventual",  "date":"2023-01-23"},
   {"description":"Energia elétrica",      "amount":"200.00","type":"saída","frequency":"recorrente","date":"2023-06-10"},
   {"description":"Água",                  "amount":"150.00","type":"saída","frequency":"recorrente","date":"2023-06-15"},
