@@ -14,14 +14,14 @@ const AuthContext = createContext<IAuthContext>({} as IAuthContext);
 
 const AuthProvider: React.FC<Props> = ({ children }) => {
     const [logged, setLogged] = useState<boolean>(() => {
-        const isLogged = localStorage.getItem('@minha-carteira:logged');
+        const isLogged = localStorage.getItem('@finance-dashboard:logged');
 
         return !!isLogged;
     });
 
     const signIn = (email: string, password: string) => {
-        if(email === 'rodrigo@email.com' && password === '123'){
-            localStorage.setItem('@minha-carteira:logged', 'true');
+        if(email === 'abruno@email.com' && password === '123'){
+            localStorage.setItem('@finance-dashboard:logged', 'true');
             setLogged(true);
         }else{
             alert('Senha ou usuário inválidos!');
@@ -29,7 +29,7 @@ const AuthProvider: React.FC<Props> = ({ children }) => {
     }
 
     const signOut = () => {
-        localStorage.removeItem('@minha-carteira:logged');
+        localStorage.removeItem('@finance-dashboard:logged');
         setLogged(false);
     }
 
