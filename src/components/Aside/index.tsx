@@ -54,11 +54,11 @@ const Aside: React.FC = () => {
                 </ToggleMenu>
 
                 <LogImg src={logoImg} alt="Logo Minha Carteira" />
-                <Title>Minha Carteira</Title>
+                <Title>Finance Dashboard</Title>
             </Header>
 
             <MenuContainer>
-                <MenuItemLink href="/">
+                <MenuItemLink href="/dashboard">
                     <MdDashboard />
                     Dashboard
                 </MenuItemLink>
