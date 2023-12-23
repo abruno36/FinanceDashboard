@@ -26,9 +26,13 @@ interface ITheme {
     }
 }
 
+interface Props {
+    children: React.ReactNode;
+}
+
 const ThemeContext = createContext<IThemeContext>({} as IThemeContext);
 
-const ThemeProvider: React.FC = ({  }) => {
+const ThemeProvider: React.FC<Props> = ({ children }) => {
     const [theme, setTheme] = useState<ITheme>(() => {
         const themeSaved = localStorage.getItem('@minha-carteira:theme');
 
@@ -51,7 +55,7 @@ const ThemeProvider: React.FC = ({  }) => {
 
     return (
         <ThemeContext.Provider value={{ toggleTheme, theme }}>
-            {}
+            {children}
         </ThemeContext.Provider>
     )
 }

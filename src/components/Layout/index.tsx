@@ -7,8 +7,7 @@ import Content from '../Content';
 interface ChildrenProps {
     children: React.ReactNode;
   };
-const Layout: React.FC<ChildrenProps> = ({ children }) => {
-    return (
+const Layout: React.FC<ChildrenProps> = ({ children }) => (
         <Grid>
             <MainHeader />
             <Aside />
@@ -17,5 +16,5 @@ const Layout: React.FC<ChildrenProps> = ({ children }) => {
             </Content>
         </Grid>
     )
-}
+
 export default Layout;

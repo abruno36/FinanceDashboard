@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { useState } from 'react';
+import React from 'react';
 
 import {
     Container,
@@ -15,21 +14,22 @@ interface IToggleProps {
     onChange(): void;
 }
 
-const Toggle: React.FC = () => {
-    const [online, setOnline] = useState<boolean>(true);
-
-    return (
-        <Container>
-            <ToggleLabel>Light</ToggleLabel>
-            <ToggleSelector
-                checked={online}
-                onChange={() => setOnline(!online)}
-                uncheckedIcon={false}
-                checkedIcon={false}
-            />
-            <ToggleLabel>Dark</ToggleLabel>
-        </Container>
-    );
-};
+const Toggle: React.FC<IToggleProps> = ({
+    labelLeft,
+    labelRight,
+    checked,
+    onChange
+}) => (
+    <Container>
+        <ToggleLabel>{labelLeft}</ToggleLabel>
+        <ToggleSelector                    
+            checked={checked}
+            uncheckedIcon={false}
+            checkedIcon={false}
+            onChange={onChange}
+        />
+        <ToggleLabel>{labelRight}</ToggleLabel>
+    </Container>
+)
 
 export default Toggle;
