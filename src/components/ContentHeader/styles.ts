@@ -12,10 +12,8 @@ export const Container = styled.div`
 
     margin-bottom: 25px;    
 
-
     @media(max-width: 320px){
-        flex-direction: column;
-       
+        flex-direction: column;    
     }
 `;
 
@@ -51,9 +49,7 @@ export const Controllers = styled.div`
 
     @media(max-width: 320px){
         width: 100%;
-
-        justify-content: space-around;
-        
+        justify-content: space-around;    
         margin-top: 20px;       
     }
 `;

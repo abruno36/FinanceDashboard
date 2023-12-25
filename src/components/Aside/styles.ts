@@ -1,15 +1,12 @@
 import styled, { css } from 'styled-components';
 
-
 interface IContainerProps {
     menuIsOpen: boolean;
 }
 
-
 interface IThemeToggleFooterProps {
     menuIsOpen: boolean;
 }
-
 
 export const Container = styled.div<IContainerProps>`
     grid-area: AS;
@@ -42,7 +39,6 @@ export const Header = styled.header`
     height: 70px;
     display: flex;
     align-items: center;
-
 `;
 
 export const LogImg = styled.img`
@@ -62,7 +58,6 @@ export const Title = styled.h3`
         display: none;
     }
 `;
-
 
 export const MenuContainer = styled.nav`
     display: flex;
@@ -91,8 +86,6 @@ export const MenuItemLink = styled.a`
         margin-right: 5px;
     }
 `;
-
-
 
 export const MenuItemButton = styled.button`
     font-size: 16px;
