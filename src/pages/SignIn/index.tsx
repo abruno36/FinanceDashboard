@@ -28,7 +28,7 @@ const SignIn: React.FC = () => {
             </Logo>
 
             <Form onSubmit={() => signIn(email, password)}>
-                <FormTitle>Entrar123</FormTitle>
+                <FormTitle>Entrar</FormTitle>
 
                 <Input 
                     type="email"
