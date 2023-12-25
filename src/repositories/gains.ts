@@ -11,7 +11,7 @@ export default [
   { "description": "Salário",     "amount": "24500.23", "type": "entrada", "frequency": "recorrente", "date": "2023-06-10" }, 
   { "description": "Salário",     "amount": "24500.23", "type": "entrada", "frequency": "recorrente", "date": "2023-07-10" }, 
   { "description": "Salário",     "amount": "24500.23", "type": "entrada", "frequency": "recorrente", "date": "2023-12-10" }, 
-  { "description": "Ganho extra", "amount": "1224500.23", "type": "entrada", "frequency": "eventual", "date": "2023-12-25" },
+  { "description": "Ganho extra", "amount": "224500.23", "type": "entrada", "frequency": "eventual", "date": "2023-12-25" },
   { "description": "Freela site", "amount": "2900.23",  "type": "entrada", "frequency": "eventual",   "date": "2023-12-21" },
   { "description": "Salário",     "amount": "24500.00", "type": "entrada", "frequency": "recorrente", "date": "2022-05-15" },
   { "description": "Salário",     "amount": "24500.00", "type": "entrada", "frequency": "recorrente", "date": "2022-06-15" }]

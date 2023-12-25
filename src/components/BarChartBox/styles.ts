@@ -52,7 +52,6 @@ export const SideLeft = styled.aside`
     }
 `;
 
-
 export const LegendContainer = styled.ul`
     list-style: none;
     
@@ -73,10 +72,8 @@ export const LegendContainer = styled.ul`
         background-color: ${props => props.theme.colors.tertiary};
     }
 
-    
     @media(max-width: 1200px){
         display: flex;
-
         height: auto; 
     }
 `;
@@ -116,7 +113,6 @@ export const Legend = styled.li<ILegendProps>`
 
     }
 `;
-
 
 export const SideRight = styled.main`
    flex: 1;
